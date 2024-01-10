@@ -73,7 +73,7 @@ const CakesPage = () => {
             {cakes.map((item) => (
               <div key={item.name} className={`cakes-container ${item.name}`}> 
                 <div className="imageContainer">
-                  <Image src={`/${item.name}.png`} alt={item.name} width={320} height={240}  />
+                  <Image src={`/${item.name}.png`} alt={item.name} width={300} height={220}  />
                 </div>
                 <div className="detail-container">
                   <div className="cakes-info"> 
@@ -84,7 +84,7 @@ const CakesPage = () => {
                   </div>
                 </div>
                 <div className="cake-logo">
-                  <Image src='/logo-torta.png'  width={80} height={80}  /> 
+                  <Image src='/logo-torta.png'  width={70} height={70}  /> 
                 </div>
               </div>
             ))}

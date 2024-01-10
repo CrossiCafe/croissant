@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Info () { 
   return (
     <main>
-      <Container className='container' id='info'> 
+      <Container id='info'> 
         <p>En crossi no solo regalamos calidad y mucho amor en nuestros productos,</p>
         <h1 className='experiencia'>llevamos todo lo que hacemos a otro nivel para que tu experiencia se convierta en un viaje de ida</h1>
       </Container>
