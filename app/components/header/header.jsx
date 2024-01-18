@@ -16,6 +16,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Link from 'next/link';
 import Image from "next/image";
 import Logo from "public/logo-croissant.png";
+import DocMenu from "public/docs/menu-crossi.pdf";
 import { Container, Slide } from '@mui/material';
 
 
@@ -24,11 +25,13 @@ const drawerWidth = 240;
 const navItems = [
   {
     name:'Menú',
-    route:'/'
+    route:'/docs/menu-crossi.pdf',
+    descargable:true
   },
   {
     name:'Sucursales',
-    route:'/sucursales' 
+    route:'/sucursales',
+    descargable:false
   },
   // {
   //   name: 'Franquicias',
@@ -36,7 +39,8 @@ const navItems = [
   // }, 
   {
     name:'Contacto',
-    route:'/contacto'
+    route:'/contacto',
+    descargable:false
   }
 ];
 
@@ -76,7 +80,7 @@ export default function Header({ window }) {
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <Link href={item.route}>{item.name}</Link>
+              <Link href={item.route} target={item.descargable ? "_blank" : "_self"}>{item.name}</Link>
             </ListItemButton>
           </ListItem>
         ))}
@@ -138,7 +142,7 @@ export default function Header({ window }) {
               </IconButton>
               <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 5, alignItems: "center"}}>
                 {navItems.map((item) => (
-                  <Link href={item.route} key={item.name}>{item.name}</Link>
+                  <Link href={item.route} key={item.name}  target={item.descargable ? "_blank" : "_self"}>{item.name}</Link>
                 ))}
               </Box>
             </Toolbar>

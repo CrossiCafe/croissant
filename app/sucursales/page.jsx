@@ -42,7 +42,7 @@ const SucursalesPage = () => {
   return (
     <main className="main">
         <div className="banner">
-          <Image src="/sucursales-banner.png" alt="Banner Sucursales" width={2560} height={507} style={{ maxWidth: '100%', height: 'auto' }}/>
+          <Image className="banner-img" src="/sucursales-banner.png" alt="Banner Sucursales" width={2560} height={507} style={{ maxWidth: '100%', height: 'auto' }}/>
         </div>
       <Container className='sucursales-container'>
         {sucursales.map((item) => (
@@ -55,7 +55,7 @@ const SucursalesPage = () => {
                 <p><strong>{`${item.zone}`}</strong></p>
                 <p>{`${item.address}`}</p>
                 <p>{`${item.time}`}</p>
-                <WhatsApp number={item.contact}/>
+                <WhatsApp number={item.contact} className="whatsapp"/>
               </div>
               <iframe
                 className="mapIframe"

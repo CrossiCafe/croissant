@@ -40,22 +40,22 @@ export default function ContactoPage() {
           </div>
           <Image
             src={Sobre}
-            width={50}
-            height={50}
+            width={243}
+            height={245}
             alt="Sobre"
             className="sobreImg"
           />
           <Image
             src={MDQ}
-            width={40}
-            height={40}
+            width={239}
+            height={239}
             alt="logo MDQ"
             className="mdqImg"
           />
           <Image
             src={Avion}
-            width={100}
-            height={50}
+            width={401}
+            height={198}
             alt="Avioncito"
             className="avionImg"
           />

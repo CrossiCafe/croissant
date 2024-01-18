@@ -24,7 +24,7 @@ export default function WhatsApp({ number }) {
         href={`https://${whatsapp}text=Hola%20Team%20Crossi,%20necesito%20hacerles%20una%20consulta...`}
         target="_blank"
         >
-            <Image src={WhatsAppImg} width={"30px"} height={"30px"} alt="WhatsApp"/>
+            <Image src={WhatsAppImg} width={"30px"} height={"30px"} alt="WhatsApp" className="logo-whatsapp"/>
             {number}
         </Link>
     )

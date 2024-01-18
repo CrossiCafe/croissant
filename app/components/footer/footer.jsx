@@ -33,8 +33,8 @@ export default function Footer() {
               <Link href={"https://www.instagram.com/croissantmdp/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="}  rel="noopener noreferrer" target="_blank">
                 <Image 
                   src={Insta}
-                  width={30}
-                  height={25}
+                  width={52}
+                  height={41}
                   alt="Instagram"
                   className='social'
                   priority />
@@ -42,8 +42,8 @@ export default function Footer() {
               <Link href={"https://www.facebook.com/croissantcafemdp"} rel="noopener noreferrer" target="_blank">
                 <Image 
                   src={Face}
-                  width={30}
-                  height={25}
+                  width={52}
+                  height={41}
                   alt="Facebook"
                   className='social'
                   priority />
@@ -51,10 +51,10 @@ export default function Footer() {
               <Link href={"https://www.tiktok.com/@croissantmdp?is_from_webapp=1&sender_device=pc"} rel="noopener noreferrer" target="_blank">
                 <Image 
                   src={TikTok}
-                  width={28}
-                  height={27}
+                  width={46}
+                  height={44}
                   alt="TikTok"
-                  className='social'
+                  className='social social-tiktok'
                   priority />
               </Link>
             </div>

@@ -12,6 +12,42 @@ footer {
   color: white; 
   align-items: center;
 }
+
+.footer-section {
+  width: 33%;
+  text-align: center;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer-section img.social {
+  width: 30px; 
+  height: auto;
+  margin: 5px;
+  @media screen and (max-width: 767px) {
+    margin: 0;
+  } 
+}
+.social-tiktok{
+  padding: 0px 2.5px;
+}
+.contacts {
+  font-size: 1rem;
+  @media screen and (max-width: 425px) {
+    font-size: 0.75rem;
+    margin-left: -120px
+  }
+}
 .brand-logo{
   width: 200px;
   height: auto;
