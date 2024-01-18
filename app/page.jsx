@@ -9,6 +9,7 @@ import Recarga from './components/recarga/recarga';
 import CakesPage from './components/carousel/cakes';
 import Eventos from './components/eventos/eventos';
 import MenuPage from './components/carousel/menu';
+import Gallery from './components/gallery/gallery.js';
 
 export default function HomePage() {
   return (
@@ -20,7 +21,8 @@ export default function HomePage() {
       <Info />
       {/* Social media? Vale la pena ponerlo? Esta en el footer la misma Info */}
       <SocialMediaTitle />
-      <MasonryImageList />
+      {/* <MasonryImageList /> */}
+      <Gallery/>
       <Recarga />
       <CakesPage />
       <Eventos />
@@ -28,3 +30,4 @@ export default function HomePage() {
     </main>
   )
 }
+

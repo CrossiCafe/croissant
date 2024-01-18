@@ -1,0 +1,18 @@
+.bg-blur{
+  backdrop-filter: blur(10px);
+  width: 100% !important;
+  height: auto;
+}
+.box-img-carrousel{
+  width: 100%;
+  display: flex!important;
+  align-items: center!important;
+  justify-content:center!important;
+  overflow: hidden;
+}
+.box-img{
+  width: 100%;
+  display: flex!important;
+  align-items: center!important;
+  justify-content:center!important;
+}
