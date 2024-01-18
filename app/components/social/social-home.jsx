@@ -9,10 +9,10 @@ export default function SocialMediaTitle () {
       <Container className='title'> 
         <h1 className='title-h1'>SUMATE A LA COMUNIDAD CROSSI!</h1>
         <div className="social-media-container">
-          <Image src="/ig.png" alt="Corazon" width={42} height={32} />
-          <Image src="/fb.png" alt="Corazon" width={42} height={32} />
-          <Image src="/tiktok.png" alt="Corazon" width={42} height={35} />
-          <Image src="/linkedin.png" alt="Corazon" width={42} height={40} />
+          <Image src="/ig.png" alt="Corazon" width={52} height={41} />
+          <Image src="/fb.png" alt="Corazon" width={52} height={41} />
+          <Image src="/tiktok.png" alt="Corazon" width={46} height={44} />
+          <Image src="/linkedin.png" alt="Corazon" width={73} height={75} className='in-icon'/>
         </div>
       </Container>
       <Container className='social-description'>

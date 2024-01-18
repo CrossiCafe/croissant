@@ -1,5 +1,5 @@
 .title {
-  background-color: #7F3C1B;
+  background-color: #A6643D;
   max-width: 1150px;
   display: flex;
   justify-content: space-evenly;
@@ -22,6 +22,11 @@
   font-family: var(--font-anton);
   font-weight: 400;
   letter-spacing: 3px;
+}
+
+.in-icon{
+  width:49px;
+  height: auto;
 }
 
 .social-media-container {

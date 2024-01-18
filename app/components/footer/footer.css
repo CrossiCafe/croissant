@@ -39,6 +39,9 @@ footer {
     margin: 0;
   } 
 }
+.social-tiktok{
+  padding: 0px 2.5px;
+}
 .contacts {
   font-size: 1rem;
   @media screen and (max-width: 425px) {
