@@ -19,6 +19,9 @@
   position: relative;
   z-index: 2;
 }
+.contactDiv h1{
+  color: var( --third-button)
+}
 .sobreImg{
   position: absolute;
   z-index: 3;
