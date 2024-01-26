@@ -5,7 +5,8 @@ import Image from 'next/image';
 
 export default function Info () { 
   return (
-    <main>
+    <main className="main-info">
+      {/* <Image src="/background-mapa.png" alt="Background" className="background-info" width={1370} height={760} style={{ maxWidth: '100%', height: 'auto' }}/> */}
       <Container id='info'> 
         <p>En crossi no solo regalamos calidad y mucho amor en nuestros productos,</p>
         <h1 className='experiencia'>llevamos todo lo que hacemos a otro nivel para que tu experiencia se convierta en un viaje de ida</h1>

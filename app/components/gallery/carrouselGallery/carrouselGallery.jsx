@@ -16,7 +16,7 @@ export default function CarrouselGalley({ itemData}) {
       <Slider {...settings}>
         {itemData.map((item, index) => (
           <div  key={index}  className="box-img-carrousel">
-              <Image src={item.img} alt={item.title} width={item.width} height={item.height} />
+              <Image src={item.img} alt={item.title} width={item.width} height={item.height} style={{ maxWidth: '100%', height: '675px' }}/>
           </div>
         ))}
       </Slider>

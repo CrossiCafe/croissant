@@ -1,4 +1,4 @@
-
+// import "./mosaics.css";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { Container } from "@mui/material";
@@ -14,7 +14,7 @@ function srcset(image, size, rows = 1, cols = 1) {
 
 export default function Mosaics({itemData}) {
   return (
-    <Container>
+    <Container className='main-mosaic'>
       <ImageList
         sx={{ width: "100%", height: "auto" }}
         variant="quilted"

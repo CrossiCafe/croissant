@@ -1,3 +1,21 @@
+/* .main-recarga {
+  background-image: url('/background-recarga.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+} */
+.main-recarga {
+  position: relative;
+  z-index: 2;
+}
+.background-recarga {
+  position: absolute;
+  z-index: 1;
+  @media screen and (min-width: 1300px) {
+    left: 15%;
+    top: -150px;
+  }
+}
 .recarga {
   display: flex;
   justify-content: center;

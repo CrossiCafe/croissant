@@ -5,7 +5,8 @@ import { Container } from "@mui/material";
 
 export default function Recarga () { 
   return (
-    <main className=''>
+    <main className='main-recarga'>
+      <Image className="background-recarga"src="/background-recarga.png" alt="Vasos" width={1400} height={600} style={{ maxWidth: '100%', height: 'auto' }}  />
       <Container className='recarga'> 
         <Image className="vasos-img"src="/vasos.png" alt="Vasos" width={380} height={260}  />
         <div className="recarga-text">

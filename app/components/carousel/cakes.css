@@ -1,5 +1,13 @@
 @import '../../globals.css';
-
+.main-cakes {
+    position: relative;
+    background-image: url('/background-cakes.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .cakes-component {
   display: flex;
   align-items: center;
@@ -39,6 +47,16 @@
   font-family: var(--font-anton);
   margin-bottom: 20px;
   letter-spacing: 4px;
+  @media screen and (max-width: 1024px){
+    font-size: 1.3rem;
+  }
+}
+
+.cakes-info p {
+  font-size: 1.3rem;
+  @media screen and (max-width: 1024px){
+    font-size: 1rem;
+  }
 }
 
 .cake-logo {
@@ -100,4 +118,21 @@
 .menu-img {
   width: 100%;
   max-height: 380px;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    max-height: 280px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-height: 490px;
+  }
+}
+
+#title-tentate {
+  margin-bottom: 25px;
+  width: 1045px;
+  max-width: 1045px;
+  @media screen and (max-width: 1440px) {
+    width: auto;
+  }  
 }

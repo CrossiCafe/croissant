@@ -33,10 +33,11 @@ const navItems = [
     route:'/sucursales',
     descargable:false
   },
-  // {
-  //   name: 'Franquicias',
-  //   route: '/franquicias'
-  // }, 
+  {
+    name: 'Franquicias',
+    route: '/docs/franquicias.pdf',
+    descargable:true
+  }, 
   {
     name:'Contacto',
     route:'/contacto',

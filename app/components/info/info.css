@@ -1,3 +1,18 @@
+.main-info {
+  background-image: url('/background-mapa.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* .main-info {
+  position: relative;
+  z-index: 2;
+}
+.background-info {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+} */
 #info {
   background-color: transparent !important;
   color: #A6643D;

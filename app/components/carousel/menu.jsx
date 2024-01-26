@@ -45,6 +45,10 @@ const MenuPage = () => {
       name: "viernes",
       mobileImage: "viernes-mobile.png",
     },
+    {
+      name: "eventos-carrusel",
+      mobileImage: "eventos-mobile.png",
+    }
   ];
 
   return (

@@ -66,20 +66,23 @@ const CakesPage = () => {
 
   
   return (
-    <main className="main">
+    <main className="main-cakes">
       <Container className='cakes-component'>
+        <h1 className='title-h1 title' id="title-tentate">TENTATEEEEE Encargá la tuya y sé FELIZ</h1>
         <div style={sliderContainerStyle}>
           <Slider {...sliderSettings}>
             {cakes.map((item) => (
               <div key={item.name} className={`cakes-container ${item.name}`}> 
                 <div className="imageContainer">
-                  <Image src={`/${item.name}.png`} alt={item.name} width={300} height={220}  />
+                  <Image src={`/${item.name}.png`} alt={item.name} width={340} height={260}  />
                 </div>
                 <div className="detail-container">
                   <div className="cakes-info"> 
                     <h2><strong style={{ color: item.fontColor }}>{`${item.title}`}</strong></h2>
                     <p>{`${item.description}`}</p>
+                    <br />
                     <p>{`${item.small}`}</p>
+                    <br />
                     <p>{`${item.big}`}</p>
                   </div>
                 </div>
