@@ -7,6 +7,7 @@ import Logo from "public/logo-croissant.png";
 import Insta from "public/ig.png";
 import Face from "public/fb.png";
 import TikTok from "public/tiktok.png";
+import linkedin2 from "public/linkedin2.png"
 
 // TODO:
 // - imagen de tiktok tiene diferente tamaño que las otras.
@@ -55,6 +56,15 @@ export default function Footer() {
                   height={44}
                   alt="TikTok"
                   className='social social-tiktok'
+                  priority />
+              </Link>
+              <Link href={"https://www.linkedin.com/company/croissant-cafe/?originalSubdomain=ar"} rel="noopener noreferrer" target="_blank">
+                <Image 
+                  src={linkedin2}
+                  width={46}
+                  height={44}
+                  alt="LinkedIn"
+                  className='social social-linkedin'
                   priority />
               </Link>
             </div>

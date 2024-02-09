@@ -18,7 +18,7 @@ main {
 
 
 
-.container {
+.hello-container {
     background-image: url(../../../public/fondo-comp-welcome.png);
     background-repeat: no-repeat;
     background-position: 50%;
