@@ -61,8 +61,8 @@ export default function Footer() {
               <Link href={"https://www.linkedin.com/company/croissant-cafe/?originalSubdomain=ar"} rel="noopener noreferrer" target="_blank">
                 <Image 
                   src={linkedin2}
-                  width={46}
-                  height={44}
+                  width={48}
+                  height={50}
                   alt="LinkedIn"
                   className='social social-linkedin'
                   priority />

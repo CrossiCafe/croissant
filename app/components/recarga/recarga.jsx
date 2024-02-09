@@ -1,3 +1,4 @@
+"use client"
 import './recarga.css';
 import Image from 'next/image';
 import { Container } from "@mui/material";
@@ -13,11 +14,10 @@ export default function Recarga () {
         <div className="recarga-text">
           <h1 className='recarga-text-h1'>RECARGATE</h1>
           <p className='description'>Con nuestros vasos facheritos y disfrutá de un buen café.</p>
-          <Link
-          
-            href={"/sucursales"}
-          >
-            <p className='boton'>Conseguilos en<br /> nuestras sucursales</p>
+          <Link href="/sucursales" >
+            <p className='boton'>
+              Conseguilos en<br /> nuestras sucursales
+            </p>
           </Link>
         </div>
       </Container>

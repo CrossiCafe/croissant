@@ -87,7 +87,7 @@ const CakesPage = () => {
                   </div>
                 </div>
                 <div className="cake-logo">
-                  <Image src='/logo-torta.png'  width={70} height={70}  /> 
+                  <Image src='/logo-torta.png' alt="torta"  width={70} height={70}  /> 
                 </div>
               </div>
             ))}

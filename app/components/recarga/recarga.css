@@ -6,7 +6,6 @@
 } */
 .main-recarga {
   position: relative;
-  z-index: 2;
 }
 .background-recarga {
   position: absolute;
@@ -17,6 +16,8 @@
   }
 }
 .recarga {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
