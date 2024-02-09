@@ -6,6 +6,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from 'next/link';
 
 const sliderSettings = {
   dots: true,
@@ -68,7 +69,12 @@ const CakesPage = () => {
   return (
     <main className="main-cakes">
       <Container className='cakes-component'>
+        <Link
+          
+          href={"/sucursales"}
+        >
         <h1 className='title-h1 title' id="title-tentate">TENTATEEEEE Encargá la tuya y sé FELIZ</h1>
+        </Link>
         <div style={sliderContainerStyle}>
           <Slider {...sliderSettings}>
             {cakes.map((item) => (
