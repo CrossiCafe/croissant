@@ -10,12 +10,16 @@ import { theme } from "../../styles/materialThemeFormContact";
 import ThemeProvider from "@mui/material/styles/ThemeProvider";
 import { sendEmail } from "../../utils/sendEmail";
 import Swal from "sweetalert2";
+import { TextareaAutosize } from '@mui/base/TextareaAutosize';
+
 
 export default function FormContact() {
   const reasons = [ 'Eventos', 'Trabajar con Nosotros', 'Otros']
+  const areas = [ 'Cocina', 'Marketing', 'Otros']
 
   const [recaptchaValue, setRecaptchaValue] = React.useState('');
   const [reason, setReason] = React.useState("")
+  const [area, setArea] = React.useState("")
   const captchaRef = React.useRef(null);
 
   const {
@@ -30,6 +34,9 @@ export default function FormContact() {
   function onChangeReason(event) {
     setReason(event.target.value);
   }
+  function onChangeArea(event) {
+    setArea(event.target.value);
+  }
 
 
   const onSubmit = async (data) => {
@@ -37,7 +44,7 @@ export default function FormContact() {
       await trigger("recaptcha"); // Activa la validación de recaptcha
   
       const isValid = recaptchaValue !== ''; // Comprueba si el reCAPTCHA está completado
-  
+      console.log(data)
       if (!isValid) {
         Swal.fire({
           title: "Por favor completa el reCAPTCHA.",
@@ -165,6 +172,37 @@ export default function FormContact() {
 
             {
               reason === "Trabajar con Nosotros" &&
+              <Controller
+              name="areaToWork"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <FormControl fullWidth variant="filled" sx={{ mt: "10px", mx:"auto"}} >
+                  <InputLabel id="area-select-label">Areas a aplicar</InputLabel>
+                  <Select
+                    labelId="area-select-label"
+                    id="area-select"
+                    value={area}
+                    label="Areas a aplicar"
+                    onChange={onChangeArea}
+                    onBlur={(e) => {
+                      field.onChange(e);
+                      trigger("areaToWork");
+                    }}
+                  >
+                    {
+                      areas.map((item)=>(
+                        <MenuItem key={item} value={item}>{item}</MenuItem>
+                      ))
+                    }
+                  </Select>
+                </FormControl>
+              )}
+            />
+            }
+
+            {
+              reason === "Trabajar con Nosotros" &&
               <CustomTextField
                 name="file"
                 label="Adjunta Link de tu CV"
@@ -174,6 +212,16 @@ export default function FormContact() {
                 aria_describedby="outlined-day-helper-text"
               />
             }
+            <Controller
+              name="message"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <FormControl fullWidth variant="filled" sx={{ mt: "10px", mx:"auto"}} >
+                  <TextareaAutosize aria-label="empty textarea" placeholder="Dejanos tu comentario..."/>
+                  </FormControl>  
+                )}
+            />
             <Controller
               name="recaptcha"
               control={control}

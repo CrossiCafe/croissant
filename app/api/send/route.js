@@ -6,13 +6,13 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST( request ) {
   try {
     const body = await request.json();
-    // console.log("form")
-    const { reason, name, lastName, email, phone, file} = body;
+    //console.log("form")
+    const { reason, name, lastName, email, phone, file, areaToWork} = body;
     const data = await resend.emails.send({
       from: 'WebCrossi <onboarding@resend.dev>',
       to: ['mkt.croissantcafe@gmail.com'],
       subject: `${reason}`,
-      react: EmailTemplate({ firstName: name, lastName: lastName, email: email, phone: phone, file:file,reason:reason}),
+      react: EmailTemplate({ firstName: name, lastName: lastName, email: email, phone: phone, file:file, reason:reason, area:areaToWork}),
     });
 
     return Response.json(data);

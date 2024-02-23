@@ -26,6 +26,9 @@ export const contactSchema = yup.object({
   file: yup
     .string()
     .notRequired(),
+  areaToWork: yup
+    .string()
+    .notRequired(),
   recaptcha: yup
     .string()
     // .required("Por favor acepta el captcha."),
