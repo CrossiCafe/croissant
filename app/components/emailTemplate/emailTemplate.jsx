@@ -1,7 +1,7 @@
 
 
 export const EmailTemplate = ({
-  firstName, lastName, email, phone, file, reason, area
+  firstName, lastName, email, phone, file, reason, area, message
 }) => (
   <div>
     <h3> Se quieren contatar con ustedes desde la WEB</h3>
@@ -12,11 +12,13 @@ export const EmailTemplate = ({
     <div>
       <h3>Quiere trabajar con ustedes en el area de: {area}</h3>
       {
-        file  && 
-        <h3><a href={`${file}`}>Link del CV</a>.</h3>
+        file  && <h3><a href={`${file}`}>Link del CV</a>.</h3>
       }
     </div>
 
+    }
+    {
+      message && <h3>Mensaje: {message}</h3>
     }
   </div>
 );

@@ -10,7 +10,6 @@ import { theme } from "../../styles/materialThemeFormContact";
 import ThemeProvider from "@mui/material/styles/ThemeProvider";
 import { sendEmail } from "../../utils/sendEmail";
 import Swal from "sweetalert2";
-import { TextareaAutosize } from '@mui/base/TextareaAutosize';
 
 
 export default function FormContact() {
@@ -20,6 +19,7 @@ export default function FormContact() {
   const [recaptchaValue, setRecaptchaValue] = React.useState('');
   const [reason, setReason] = React.useState("")
   const [area, setArea] = React.useState("")
+  const [message, setMessage] = React.useState("")
   const captchaRef = React.useRef(null);
 
   const {
@@ -37,6 +37,9 @@ export default function FormContact() {
   function onChangeArea(event) {
     setArea(event.target.value);
   }
+  function onChangeMessage(event) {
+    setMessage(event.target.value);
+  }
 
 
   const onSubmit = async (data) => {
@@ -44,7 +47,7 @@ export default function FormContact() {
       await trigger("recaptcha"); // Activa la validación de recaptcha
   
       const isValid = recaptchaValue !== ''; // Comprueba si el reCAPTCHA está completado
-      console.log(data)
+      //console.log(data)
       if (!isValid) {
         Swal.fire({
           title: "Por favor completa el reCAPTCHA.",
@@ -60,6 +63,8 @@ export default function FormContact() {
       if(response.data.id){
         captchaRef.current.reset();
         setReason("")
+        setMessage("")
+        setArea("")
         reset({});
         Swal.fire({
           title: "Ya se envio tu solicitud!",
@@ -217,8 +222,21 @@ export default function FormContact() {
               control={control}
               defaultValue=""
               render={({ field }) => (
-                <FormControl fullWidth variant="filled" sx={{ mt: "10px", mx:"auto"}} >
-                  <TextareaAutosize aria-label="empty textarea" placeholder="Dejanos tu comentario..."/>
+                <FormControl fullWidth variant="filled" sx={{ mx:"auto"}} >
+                  <textarea 
+                    placeholder="Dejanos tu comentario..." 
+                    rows="4" 
+                    maxLength={160} 
+                    name="message"
+                    value={message}
+                    className="textareaMessage"
+                    onChange={onChangeMessage}
+                    onBlur={(e) => {
+                      field.onChange(e);
+                      trigger("message");
+                    }}
+                  ></textarea>
+                  <small className="textHelper">* máximo 160 caracteres</small>
                   </FormControl>  
                 )}
             />
