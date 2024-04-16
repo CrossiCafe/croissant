@@ -23,6 +23,12 @@ export const contactSchema = yup.object({
     .string()
     .required("Este campo es obligatorio")
     .matches(/^[0-9]{10,}$/, "El número debe incluir el código de area, pero no el prefijo."),
+  lugarEvento: yup
+    .string()
+    .required("Este campo es obligatorio"),
+  cantidadPersonas: yup
+    .string()
+    .required("Este campo es obligatorio"),
   file: yup
     .string()
     .notRequired(),

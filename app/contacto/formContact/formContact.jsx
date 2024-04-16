@@ -174,7 +174,35 @@ export default function FormContact() {
             <Typography variant="caption" color="red">
               <ErrorMessage errors={errors} name="phone" />
             </Typography>
-
+            {
+              reason === "Eventos" && (
+              <>
+                <CustomTextField
+                  name="lugarEvento"
+                  label="Lugar del Evento"
+                  type="text"
+                  control={control}
+                  defaultValue=""
+                  maxLength={100}
+                  onChange={(e) => setLugarEvento(e.target.value)}
+                />
+                <Typography variant="caption" color="red">
+                  <ErrorMessage errors={errors} name="lugarEvento" />
+                </Typography>
+                <CustomTextField
+                  name="cantidadPersonas"
+                  label="Cantidad de personas"
+                  type="text"
+                  control={control}
+                  defaultValue=""
+                  maxLength={100}
+                  onChange={(e) => setCantidadPersonas(e.target.value)}
+                />
+                <Typography variant="caption" color="red">
+                  <ErrorMessage errors={errors} name="cantidadPersonas" />
+                </Typography>
+              </>
+            )}
             {
               reason === "Trabajar con Nosotros" &&
               <Controller
