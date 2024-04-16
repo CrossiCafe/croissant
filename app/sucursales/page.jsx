@@ -4,6 +4,7 @@ import Image from 'next/image';
 import './SucursalesPage.css';
 import WhatsApp from '../components/whatsapp/whatsapp';
 import { Container } from '@mui/material';
+import Link from 'next/link';
 
 // TODO:
 
@@ -19,7 +20,8 @@ const SucursalesPage = () => {
       zone: "Constitución",
       address: "Av. Constitución 4399",
       time: "Lunes a domingos de 8am a 20pm",
-      contact: "2235033700"
+      contact: "2235033700",
+      pedidos: "https://www.pedidosya.com.ar/restaurantes/mar-del-plata/croissant-cafe-constitucion-menu?search=croissant"
     },
     {
       name: "guemes",
@@ -27,7 +29,8 @@ const SucursalesPage = () => {
       zone: "Güemes",
       address: "Güemes 2978",
       time: "Lunes a domingos de 8am a 20pm",
-      contact: "2233407367"
+      contact: "2233407367",
+      pedidos: "https://www.pedidosya.com.ar/restaurantes/mar-del-plata/croissant-cafe-guemes-menu"
     },
     {
       name: "cordoba",
@@ -35,7 +38,8 @@ const SucursalesPage = () => {
       zone: "Córdoba",
       address: "Córdoba 2361",
       time: "Lunes a domingos de 8am a 20pm",
-      contact: "2235033732"
+      contact: "2235033732",
+      pedidos: "https://www.pedidosya.com.ar/restaurantes/mar-del-plata/croissant-cafe---cordoba-menu"
     },
   ];
 
@@ -56,6 +60,8 @@ const SucursalesPage = () => {
                 <p>{`${item.address}`}</p>
                 <p>{`${item.time}`}</p>
                 <WhatsApp number={item.contact} className="whatsapp"/>
+                <p><Image src="/pedidosya.png" alt="PedidosYa" width={20} height={20} className='pedidosya'/>
+                <Link href={item.pedidos}>PedidosYa</Link></p>
               </div>
               <iframe
                 className="mapIframe"
