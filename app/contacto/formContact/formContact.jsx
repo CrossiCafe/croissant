@@ -184,7 +184,6 @@ export default function FormContact() {
                   control={control}
                   defaultValue=""
                   maxLength={100}
-                  onChange={(e) => setLugarEvento(e.target.value)}
                 />
                 <Typography variant="caption" color="red">
                   <ErrorMessage errors={errors} name="lugarEvento" />
@@ -192,11 +191,10 @@ export default function FormContact() {
                 <CustomTextField
                   name="cantidadPersonas"
                   label="Cantidad de personas"
-                  type="text"
+                  type="number"
                   control={control}
                   defaultValue=""
                   maxLength={100}
-                  onChange={(e) => setCantidadPersonas(e.target.value)}
                 />
                 <Typography variant="caption" color="red">
                   <ErrorMessage errors={errors} name="cantidadPersonas" />

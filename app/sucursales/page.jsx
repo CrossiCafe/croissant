@@ -60,8 +60,7 @@ const SucursalesPage = () => {
                 <p>{`${item.address}`}</p>
                 <p>{`${item.time}`}</p>
                 <WhatsApp number={item.contact} className="whatsapp"/>
-                <p><Image src="/pedidosya.png" alt="PedidosYa" width={20} height={20} className='pedidosya'/>
-                <Link href={item.pedidos}>PedidosYa</Link></p>
+                <Link href={item.pedidos} target="_blank"><Image src="/pedidosya.png" alt="PedidosYa" width={20} height={20} className='pedidosya'/> PedidosYa</Link>
               </div>
               <iframe
                 className="mapIframe"
