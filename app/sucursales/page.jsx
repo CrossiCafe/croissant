@@ -1,5 +1,6 @@
 // SucursalesPage.js
-
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import Image from 'next/image';
 import './SucursalesPage.css';
 import WhatsApp from '../components/whatsapp/whatsapp';
@@ -11,8 +12,15 @@ import Link from 'next/link';
 // - centrar el main Check!
 // - que la imagen de la sucursal sea de alto como el texto y el mapa juntos. Check!
 // - responsivo Check!
-
 const SucursalesPage = () => {
+  useEffect(() => {
+    
+    ReactGA.initialize('G-1L01SLY277');
+
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    
+  }, []);
+
   const sucursales = [
     {
       name: "consti",

@@ -1,3 +1,6 @@
+"use client";
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import Image from 'next/image';
 import WelcomeComponent from './components/welcome/welcome';
 import SocialMediaTitle from './components/social/social-home';
@@ -12,6 +15,13 @@ import MenuPage from './components/carousel/menu';
 import Gallery from './components/gallery/gallery.js';
 
 export default function HomePage() {
+  useEffect(() => {
+    
+    ReactGA.initialize('G-1L01SLY277');
+
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <main >
       <div className="banner">

@@ -39,11 +39,11 @@ const MenuPage = () => {
     },
     {
       name: "jueves",
-      mobileImage: "jueves-mobile.png",
+      mobileImage: "jueves-mobile.jpg",
     },
     {
       name: "viernes",
-      mobileImage: "viernes-mobile.png",
+      mobileImage: "viernes-mobile.jpg",
     },
     {
       name: "eventos-carrusel",

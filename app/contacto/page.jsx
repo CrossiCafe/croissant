@@ -1,4 +1,6 @@
 "use client";
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import Image from "next/image";
 import FormContact from "./formContact/formContact";
 import Banner from "public/banner_contacto.png";
@@ -12,6 +14,13 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { Box, Container } from "@mui/material";
 
 export default function ContactoPage() {
+  
+  useEffect(() => {
+    
+    ReactGA.initialize('G-1L01SLY277');
+
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   const method = useForm({
     resolver: yupResolver(contactSchema),
