@@ -174,7 +174,7 @@ export default function FormContact() {
             <Typography variant="caption" color="red">
               <ErrorMessage errors={errors} name="phone" />
             </Typography>
-            {
+            {/* {
               reason === "Eventos" && (
               <>
                 <CustomTextField
@@ -200,7 +200,7 @@ export default function FormContact() {
                   <ErrorMessage errors={errors} name="cantidadPersonas" />
                 </Typography>
               </>
-            )}
+            )} */}
             {
               reason === "Trabajar con Nosotros" &&
               <Controller
