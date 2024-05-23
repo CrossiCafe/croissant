@@ -1,3 +1,4 @@
+"use client";
 // SucursalesPage.js
 import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
