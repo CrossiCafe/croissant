@@ -13,7 +13,7 @@ import CakesPage from './components/carousel/cakes';
 import Eventos from './components/eventos/eventos';
 import MenuPage from './components/carousel/menu';
 import Gallery from './components/gallery/gallery.js';
-import MetricoolTracker from './components/metricool/metricoolTracker';
+
 
 export default function HomePage() {
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function HomePage() {
 
   return (
     <main >
-      <MetricoolTracker />
+    
       <div className="banner">
         <Image src="/banner-home.png" alt="Banner Sucursales" width={2560} height={507} style={{ maxWidth: '100%', height: 'auto' }}/>
       </div>
