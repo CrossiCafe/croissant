@@ -12,6 +12,7 @@ import { contactSchema } from "./rule/index.js";
 import { FormProvider, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Box, Container } from "@mui/material";
+import MetricoolTracker from '../components/metricool/metricoolTracker';
 
 export default function ContactoPage() {
   
@@ -29,6 +30,7 @@ export default function ContactoPage() {
 
   return (
     <main >
+      <MetricoolTracker />  
       <Image
         src={Banner}
         width={2560}

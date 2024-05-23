@@ -7,7 +7,7 @@ import './SucursalesPage.css';
 import WhatsApp from '../components/whatsapp/whatsapp';
 import { Container } from '@mui/material';
 import Link from 'next/link';
-
+import MetricoolTracker from '../components/metricool/metricoolTracker';
 // TODO:
 
 // - centrar el main Check!
@@ -54,6 +54,7 @@ const SucursalesPage = () => {
 
   return (
     <main className="main">
+      <MetricoolTracker />
         <div className="banner">
           <Image className="banner-img" src="/sucursales-banner.png" alt="Banner Sucursales" width={2560} height={507} style={{ maxWidth: '100%', height: 'auto' }}/>
         </div>

@@ -25,7 +25,7 @@ const drawerWidth = 240;
 const navItems = [
   {
     name:'Menú',
-    route:'/docs/menu-crossi.pdf',
+    route:'https://drive.google.com/file/d/1WbD02UCoqIgfjZT2cwwXWjwBCgcKnT7a/view?usp=drive_link',
     descargable:true
   },
   {
