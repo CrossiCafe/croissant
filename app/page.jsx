@@ -7,7 +7,6 @@ import SocialMediaTitle from './components/social/social-home';
 import './components/welcome/welcome.css';
 import './page.css';
 import Info from './components/info/info';
-import MasonryImageList from './components/img-board/board';
 import Recarga from './components/recarga/recarga';
 import CakesPage from './components/carousel/cakes';
 import Eventos from './components/eventos/eventos';
@@ -31,9 +30,7 @@ export default function HomePage() {
       </div>
       <WelcomeComponent className="welcome-container" />
       <Info />
-      {/* Social media? Vale la pena ponerlo? Esta en el footer la misma Info */}
       <SocialMediaTitle />
-      {/* <MasonryImageList /> */}
       <Gallery/>
       <Recarga />
       <CakesPage />

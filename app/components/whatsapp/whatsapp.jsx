@@ -17,7 +17,7 @@ export default function WhatsApp({ number }) {
                 `web.whatsapp.com/send?phone=${number}&`,
             );
         }
-    }, []);
+    }, [number]);
 
     return (
         <Link

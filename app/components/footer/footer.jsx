@@ -3,11 +3,11 @@ import './footer.css';
 import { Container } from '@mui/material';
 import Link from 'next/link';
 import Image from "next/image";
-import Logo from "public/logo-croissant.png";
-import Insta from "public/ig.png";
-import Face from "public/fb.png";
-import TikTok from "public/tiktok.png";
-import linkedin2 from "public/linkedin2.png"
+import Logo from "../../../public/logo-croissant.png";
+import Insta from "../../../public/ig.png";
+import Face from "../../../public/fb.png";
+import TikTok from "../../../public/tiktok.png";
+import linkedin2 from "../../../public/linkedin2.png"
 
 // TODO:
 // - imagen de tiktok tiene diferente tamaño que las otras.

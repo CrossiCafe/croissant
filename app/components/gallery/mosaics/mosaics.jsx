@@ -2,6 +2,7 @@
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { Container } from "@mui/material";
+import Image from 'next/image';
 
 function srcset(image, size, rows = 1, cols = 1) {
   return {
@@ -23,7 +24,7 @@ export default function Mosaics({itemData}) {
       >
         {itemData.map((item) => (
           <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
-            <img
+            <Image
               {...srcset(item.img, 121, item.rows, item.cols)}
               alt={item.title}
               loading="lazy"

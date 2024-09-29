@@ -15,8 +15,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import Toolbar from '@mui/material/Toolbar';
 import Link from 'next/link';
 import Image from "next/image";
-import Logo from "public/logo-croissant.png";
-import DocMenu from "public/docs/menu-crossi.pdf";
+import Logo from "../../../public/logo-croissant.png";
 import { Container, Slide } from '@mui/material';
 
 

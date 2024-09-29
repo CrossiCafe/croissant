@@ -3,10 +3,10 @@ import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
 import Image from "next/image";
 import FormContact from "./formContact/formContact";
-import Banner from "public/banner_contacto.png";
-import Sobre from "public/sobre.png";
-import MDQ from "public/mdq.png";
-import Avion from "public/avion.png";
+import Banner from "../../public/banner_contacto.png";
+import Sobre from "../../public/sobre.png";
+import MDQ from "../../public/mdq.png";
+import Avion from "../../public/avion.png";
 import './contact.css'
 import { contactSchema } from "./rule/index.js";
 import { FormProvider, useForm } from "react-hook-form";

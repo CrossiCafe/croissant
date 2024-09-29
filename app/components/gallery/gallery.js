@@ -3,35 +3,6 @@ import React, { useEffect, useState } from "react";
 import Mosaics from "./mosaics/mosaics.jsx"
 import CarrouselGallery from "./carrouselGallery/carrouselGallery.jsx"
 
-
-export default function Gallery() {
-
-  const [viewportWidth, setViewportWidth] = useState(0);
-
-  useEffect(() => {
-    const updateViewportWidth = () => {
-      setViewportWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', updateViewportWidth);
-    updateViewportWidth();
-
-    return () => {
-      window.removeEventListener('resize', updateViewportWidth);
-    };
-  }, []);
-
-  return (
-  <>
-      {/* {viewportWidth < 650 ?  */}
-        <CarrouselGallery  itemData={infoImg}/>
-        {/* // :
-        // <Mosaics itemData={infoImg}/>
-      } */}
-    </>
-  )
-};
-
 const infoImg = [
   {
     img: '/1-board.jpg',
@@ -82,3 +53,32 @@ const infoImg = [
   //   height:"328",
   // },
 ]
+
+export default function Gallery() {
+
+  const [viewportWidth, setViewportWidth] = useState(0);
+
+  useEffect(() => {
+    const updateViewportWidth = () => {
+      setViewportWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', updateViewportWidth);
+    updateViewportWidth();
+
+    return () => {
+      window.removeEventListener('resize', updateViewportWidth);
+    };
+  }, []);
+
+  return (
+  <>
+      {/* {viewportWidth < 650 ?  */}
+        <CarrouselGallery  itemData={infoImg}/>
+        {/* // :
+        // <Mosaics itemData={infoImg}/>
+      } */}
+    </>
+  )
+};
+
