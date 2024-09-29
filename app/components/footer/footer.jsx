@@ -9,9 +9,6 @@ import Face from "../../../public/fb.png";
 import TikTok from "../../../public/tiktok.png";
 import linkedin2 from "../../../public/linkedin2.png"
 
-// TODO:
-// - imagen de tiktok tiene diferente tamaño que las otras.
-// - hacer responsivo Check!
 
 export default function Footer() {
   return (
