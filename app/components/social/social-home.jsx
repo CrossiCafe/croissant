@@ -11,16 +11,16 @@ export default function SocialMediaTitle () {
         <h1 className='title-h1'>SUMATE A LA COMUNIDAD CROSSI!</h1>
         <div className="social-media-container">
           <Link href={"https://www.instagram.com/croissantmdp/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="}  rel="noopener noreferrer" target="_blank">
-          <Image src="/ig.png" alt="Corazon" width={52} height={41} />
+          <Image src="/ig.png" alt="Instagram" width={52} height={41} />
           </Link>
           <Link href={"https://www.facebook.com/croissantcafemdp"} rel="noopener noreferrer" target="_blank">
-          <Image src="/fb.png" alt="Corazon" width={52} height={41} />
+          <Image src="/fb.png" alt="Facebook" width={52} height={41} />
           </Link>
           <Link href={"https://www.tiktok.com/@croissantmdp?is_from_webapp=1&sender_device=pc"} rel="noopener noreferrer" target="_blank">
-          <Image src="/tiktok.png" alt="Corazon" width={46} height={44} />
+          <Image src="/tiktok.png" alt="TikTok" width={46} height={44} />
           </Link>
           <Link href={"https://www.linkedin.com/company/croissant-cafe/?originalSubdomain=ar"} rel="noopener noreferrer" target="_blank"> 
-          <Image src="/linkedin.png" alt="Corazon" width={73} height={75} className='in-icon'/>
+          <Image src="/linkedin.png" alt="Linkedin" width={73} height={75} className='in-icon'/>
           </Link>
         </div>
       </Container>
