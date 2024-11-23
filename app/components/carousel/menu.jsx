@@ -59,13 +59,13 @@ const MenuPage = () => {
             {menues.map((item) => (
               <div key={item.name} className={`menues-container ${item.name}`}>
                 <div className="menu-img">
-                  <Image
-                    src={isMobile ? `/${item.mobileImage}` : `/${item.name}.png`}
-                    alt={item.name}
-                    width={isMobile ? 768 : 1442}
-                    height={isMobile ? 392 : 768}
-                    layout="responsive"
-                  />
+                    <Image
+                      src={isMobile ? `/${item.mobileImage}` : `/${item.name}.png`}
+                      alt={item.name}
+                      width={isMobile ? 768 : 1442}
+                      height={isMobile ? 392 : 768}
+                      layout="responsive"
+                    />
                 </div>
               </div>
             ))}

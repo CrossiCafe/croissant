@@ -17,8 +17,9 @@ const anton = Anton({
 })
 
 export const metadata = {
-  title: 'Crossi',
-  description: 'Cafe que te inspira.',
+  title: 'Croissant Café',
+  description: 'Café que te inspira, con las mejores medialunas de Mar del Plata',
+  keywords: ['croissant cafe', 'croissant cafe mar del plata', 'cafe croissant', 'croissant mar del plata','cafe croissant mar del plata','cafe mar del plata', 'cafeteria mar del plata', 'cafe mdq', 'mejores medialunas mdq', 'mejores medialunas mar del plata','catering mar del plata', 'crossifans', 'crossi mar del plata', 'crossi cafe'],
 }
 
 export default function RootLayout({ children }) {
