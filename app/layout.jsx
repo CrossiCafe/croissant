@@ -19,8 +19,19 @@ const anton = Anton({
 export const metadata = {
   title: 'Croissant Café',
   description: 'Café que te inspira, con las mejores medialunas de Mar del Plata',
+  openGraph: {
+    title: 'Croissant Café',
+    description: 'Café que te inspira, con las mejores medialunas de Mar del Plata',
+    url: 'https://www.croissant.com.ar/',
+    siteName: 'Croissant Café',
+    locale: 'es_AR',
+    type: 'website',
+  },
   keywords: ['croissant cafe', 'croissant cafe mar del plata', 'cafe croissant', 'croissant mar del plata','cafe croissant mar del plata','cafe mar del plata', 'cafeteria mar del plata', 'cafe mdq', 'mejores medialunas mdq', 'mejores medialunas mar del plata','catering mar del plata', 'crossifans', 'crossi mar del plata', 'crossi cafe','franquisias croissant'],
-  
+  robots: 'index, follow', 
+  viewport: 'width=device-width, initial-scale=1',
+  themeColor: '#d4a373',
+  category: 'Cafe, Cafeteria ,Café , Cafetería, Catering, Franquisias, Medialunas, Mar del Plata '
 }
 
 export default function RootLayout({ children }) {
